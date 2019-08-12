@@ -76,6 +76,12 @@
   </repositories>
 
   <dependencies>
+    <dependency>
+      <groupId>org.camunda.bpm.cockpit.plugin</groupId>
+      <artifactId>cockpit-sample-plugin</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>runtime</scope>
+    </dependency>
 
     <!-- jee spec -->
     <dependency>
