@@ -1,0 +1,43 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <profiles>
+    <profile>
+      <id>camunda-bpm</id>
+      <repositories>
+        <repository>
+          <id>camunda-bpm-nexus</id>
+          <name>camunda-bpm-nexus</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <url>https://app.camunda.com/nexus/content/groups/public</url>
+        </repository>
+
+        <repository>
+          <id>camunda-bpm-nexus-ee</id>
+          <name>camunda-bpm-nexus-ee</name>
+          <url>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>camunda-bpm-nexus-ee</id>
+      <username>trial_ming_zenius_com</username>
+      <password>fe6eab6d-d1da-4ac6-a</password>
+    </server>
+  </servers>
+
+  <activeProfiles>
+    <activeProfile>camunda-bpm</activeProfile>
+  </activeProfiles>
+
+</settings>
